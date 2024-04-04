@@ -1,0 +1,116 @@
+.calculator{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+    width: 60vw;
+    min-width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.calculator>h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.calculator>div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.calculator>div:nth-child(2) *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator label,
+.calculator p{
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0px 5px;
+}
+
+.calculator input {
+    height: 40px;
+    min-width: 50px;
+    width: 60%;
+    max-width: 800px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #c3c3c3; 
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.calculator input:hover{
+    border: 1px solid black;
+    box-shadow: 4px 4px #c3c3c3;
+}
+
+.calculator select{
+    height: 40px;
+    min-width: 50px;
+    width: 10%;
+    max-width: 800px;
+    background-color: #fff;
+    background-image: none; 
+    border: 1px solid #c3c3c3; 
+    border-radius: 4px;
+    font-size: 35px;
+    padding-left: 16px;
+    padding-top:2px;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+
+}
+
+.calculator select::-ms-expand {
+    display: none;
+}
+
+.calculator button{
+    margin: 30px 0px;
+    height: 40px;
+    width: 50%;
+    max-width: 150px;
+    min-width: 150px;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    background: #1c56d4;
+    border-bottom: 4px solid #200fbe;
+    border-right: 4px solid #200fbe;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.calculator button:hover{
+    background-color: #0a0442;
+}
+
+@media screen and (max-width:700px){
+    .calculator>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
